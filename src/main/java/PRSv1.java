@@ -1,6 +1,9 @@
 import java.util.Scanner;
 
 public class PRSv1 {
+
+    //git repository: https://github.com/Dtuininga/Paper-Rock-Scissors-v1.git
+
     public static void main(String[] arg){
 
         System.out.println("Welcome to the Paper/Rock/Scissors Simulator Version 1");
@@ -36,7 +39,7 @@ if ((playerChoice <1) || (playerChoice>3)){
             if (computerChoice == 3) {
                 result = "You win! Your Rock smashed the computer's Scissors!";
             } else if (computerChoice == 1) {
-                result = "You lose! Your rock was covered by the computer's Paper!";
+                result = "You lose! Your Rock was covered by the computer's Paper!";
             }
         } else if (playerChoice == 3) { //player chooses Scissors
             if (computerChoice == 1) {
