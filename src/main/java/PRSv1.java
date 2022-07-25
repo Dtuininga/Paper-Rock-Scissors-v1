@@ -22,26 +22,24 @@ if ((playerChoice <1) || (playerChoice>3)){
 
         String result = "";
 
+        if (playerChoice == computerChoice){
+            result = "it's a tie!";
+        }
+
         if (playerChoice == 1) { //player chooses paper
-            if (computerChoice == 1) {
-                result = "It's a tie!";
-            } else if (computerChoice == 2) {
+            if (computerChoice == 2) {
                 result = "You win! Your Paper covered the computer's Rock!";
             } else if (computerChoice == 3) {
                 result = "You lose! Your Paper was cut by the computer's Scissors!";
             }
         } else if (playerChoice == 2) { //player chooses rock
-            if (computerChoice == 2) {
-                result = "It's a tie!";
-            } else if (computerChoice == 3) {
+            if (computerChoice == 3) {
                 result = "You win! Your Rock smashed the computer's Scissors!";
             } else if (computerChoice == 1) {
                 result = "You lose! Your rock was covered by the computer's Paper!";
             }
         } else if (playerChoice == 3) { //player chooses Scissors
-            if (computerChoice == 3) {
-                result = "It's a tie!";
-            } else if (computerChoice == 1) {
+            if (computerChoice == 1) {
                 result = "You win! Your Scissors cut the computer's Paper!";
             } else if (computerChoice == 2) {
                 result = "You lose! Your Scissors were smashed by the computer's Rock!";
